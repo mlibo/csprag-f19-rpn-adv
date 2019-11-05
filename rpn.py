@@ -1,4 +1,7 @@
-#/usr/bin/env python3
+#/usr/bin/env python
+
+import colorama
+from colorama import Fore, Back, Style
 
 def calculate(string):
     stack = list()
@@ -26,7 +29,7 @@ def calculate(string):
         else:
             stack.append(int(token))
 
-        print(stack)
+        print(Back.GREEN + Fore.BLUE + Style.DIM +str(stack))
     if len(stack) != 1:
         raise TypeError("Malformed input: " + string)
     return stack.pop()
