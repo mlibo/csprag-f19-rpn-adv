@@ -3,7 +3,7 @@ python:
   - "3.6"      # current default Python on Travis CI
 # command to install dependencies
 script:
-  - pytest coveralls/test_rpn.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
+  - pytest test_rpn.py
 before_install:
   - pip install python-coveralls
   - pip install pytest
