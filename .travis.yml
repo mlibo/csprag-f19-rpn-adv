@@ -7,5 +7,6 @@ script:
 before_install:
   - pip install python-coveralls
   - pip install pytest
+  - pip install colorama
 after_success:
   - coveralls

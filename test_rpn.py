@@ -13,7 +13,10 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(25, result)
     def test_mult(self):
         result = rpn.calculate("5 5 *")
-        self.assertEqual(25, result)    
+        self.assertEqual(25, result)
+   # def test_div(self):
+   #     result = rpn.calculate("10 5 /")
+   #     self.assertEqual(2, result)    
     def test_badinput(self):
         with self.assertRaises(TypeError):
             rpn.calculate("1 2 3 +")
