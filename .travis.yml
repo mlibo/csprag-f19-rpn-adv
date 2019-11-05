@@ -6,5 +6,6 @@ script:
   - make
 before_install:
   - pip install coveralls
+  - pip install python-coveralls
 after_success:
   - coveralls
