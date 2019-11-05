@@ -5,6 +5,6 @@ python:
 script:
   - make
 before_install:
-  - sudo apt-get ruby-coveralls
+  - pip install coveralls
 after_success:
   - coveralls
