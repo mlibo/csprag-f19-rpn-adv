@@ -4,5 +4,7 @@ python:
 # command to install dependencies
 script:
   - make
+before_install:
+  - sudo apt install ruby-coveralls
 after_success:
   - coveralls
