@@ -3,9 +3,8 @@ python:
   - "3.6"      # current default Python on Travis CI
 # command to install dependencies
 script:
-  - make
+  - coveralls/make --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
 before_install:
   - pip install coveralls
-  - pip install python-coveralls
 after_success:
   - coveralls
